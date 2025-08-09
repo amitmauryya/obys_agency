@@ -9,6 +9,9 @@ html,body{
     height: 100%;
     width:100%;
 }
+body{
+    overflow-x: hidden;
+}
 #crsr{
     height: 2vw;
     width: 2vw;
@@ -86,8 +89,6 @@ html,body{
         opacity: 0;
     }
 }
-
-
 #line1-part1 h5 ,#line1-part1 h6{
     font-size: 3vw;
     font-weight: 100;
@@ -112,7 +113,7 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:2.7vw 7vw;
+    padding:3vw 7vw;
     /* background-color: aqua; */
 }
 #nav-part2{
@@ -140,21 +141,151 @@ html,body{
   margin-top: 19vh;
 }
 .hero h1{
-    font-size: 7.3vw;
+    font-size: 7.2vw;
     font-weight: 600;
     text-transform: uppercase;
-    line-height: 7.4vw;
+    line-height: 7.1vw;
 }
-.hero h2,.hero h3{
-        font-size: 7.3vw;
+.hero h2{
+    /* opacity: 1; */
+    font-size: 7.2vw;
     font-weight: 600;
     text-transform: uppercase;
-    line-height: 7.4vw;
+    line-height: 7.1vw;
+    border-bottom: 0.5vw solid #fff;
+    padding-bottom: 0.5vw;
+    transition: all ease 0.3;
 }
 .hero h2:hover{
     -webkit-text-stroke: 1px  #fff;
     color:transparent;
     font-weight: 400;
 }
+#page2{
+    overflow-x: hidden;
+    padding-top:12vh;
+    height:100vh;
+    width:100%;
+    background-color: #0B0B0B;
+}
+#video-container{
+    /* overflow: hidden; */
+    width:70vw;
+    height: 70vh;
+    position: relative;
+    left:29%;
+    background-image:url("https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg")
+}
+#video-container img{
+    position: absolute;
+    /* z-index: 999; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top:0;
+}
+#video-cursor{
+    background-color: #FFA63D;
+    height:8vw;
+    width:8vw;
+    border-radius: 50%;
+    position: absolute;
+    top:-10%;
+    left:70%;
+    z-index:9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 1vw; */
+}
+#video-cursor i{
+   /* z-index: 999999; */
+   color: #fff;
+   font-size: 3vw;
+}
+#video-container video{
+    /* overflow: hidden; */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page3{
+    min-height:100vh;
+    width:100%;
+    background-color: rgb(19, 18, 18);
+    position: relative;
+}
+#page4{
+    min-height: 100vh;
+    width:100%;
+    background-color: #282525;
+    padding: 7vh 0;
+}
+#page4-content{
+    width:72vw;
+    position: relative;
+    margin-left:28%
+}
+#page4-content h1{
+   font-size: 7vw;
+   text-transform: uppercase;
+}
+#page4-content .underline{
+      height:1.5px;
+      width:100%;
+      background-color: #fff;
+      margin:5vw 0;
+}
+#page4-content>p{
+    font-size:2.05vw;
+    width:50%;
+    margin-bottom: 3vw;
+}
+#page4-flex{
+    display: flex;
+    /* align-items: center; */
+}
+#page4-flex img{
+    width: 48%;
+}
+#page4-flex p{
+    font-size:0.9vw ;
+    width:20%;
+    margin-left: 1vw;
+}
+#page4-blue-div{
+    background-color: #3F7DF4;
+    width: 33vw;
+    padding: 3vw;
+    position: relative;
+    margin-top: -35vh;
+    margin-left: 25vw;
+}
+.blue-div-elem{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding:2.2vw 0;
+    border-bottom: 2px solid #ffffff9f ;
+}
+.blue-div-elem h4{
+    font-size: 1.6vw;
+    font-weight: 500;
+}
+.blue-div-elem p{
+    width:40%;
+    font-size: 0.9vw;
+}
+#page5{
+   min-height: 100vh;
+   width:100%;
+}
+
+
+
+
+
+
+
 
 
