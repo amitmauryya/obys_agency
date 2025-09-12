@@ -20,7 +20,8 @@ body{
     /* background-color: white; */
     border: 1px solid white;
     position: fixed;
-    z-index: 999;
+    z-index: 99999;
+    pointer-events: none; 
     mix-blend-mode: difference;
     transform: translate(-50%,-50%);
 }
@@ -135,7 +136,7 @@ body{
     /* background-color: red; */
     width:72%;
     margin-left: 28%;
-    /* overflow: hidden; */
+    overflow: hidden;
     position: relative;
     z-index: 999;
 }
@@ -156,6 +157,7 @@ body{
     font-weight: 600;
     text-transform: uppercase;
     line-height: 7.1vw;
+    /* overflow: hidden; */
 }
 
 .hero h2{
@@ -370,9 +372,17 @@ body{
     font-size: 7vw;
     text-transform: uppercase;
     position: relative;
+    line-height: 1;
     /* width:60vw; */
     /* margin-left: 28vw; */
 }
+#footer h1:hover{
+ -webkit-text-stroke: 1px  #fff;
+    color:transparent;
+    font-weight: 400;
+    font-style: italic;
+      font-family: "silk serif";
+    }
 #footer h1::before{
   content: "04";
   position: absolute;
@@ -1053,8 +1063,10 @@ body{
         padding: 5vw 5vw;
         padding-bottom: 5vw;
     }
+    
 
-    #footer h1 {
+       #footer h1 {
+       color:#fff;
         font-size: 9.7vw;
         text-transform: uppercase;
         /* background-color: blue; */

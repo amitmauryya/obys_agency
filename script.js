@@ -35,7 +35,7 @@ tl.from(".line h1", {
     y: 150,
     stagger: 0.25,
     duration: 0.6,
-    delay:0.5
+    delay: 0.5,
 })
 tl.from("#line1-part1",{
     opacity: 0,
@@ -75,8 +75,8 @@ tl.to("#loader", {
         opacity:0
     })
     tl.from("#hero1 h1 ,#hero2 h1,#hero3 h2,#hero4 h1", {
-        // opacity: 0, 
-        y: 120,
+        opacity: 0, 
+        y: 150,
         stagger: 0.2,
     })
 
@@ -86,11 +86,13 @@ function cursoranimation(params) {
     document.addEventListener("mousemove", function (val){
     gsap.to("#crsr", {
         left: val.x,
-        top:val.y
+        top: val.y,
+        duration: 0.5,
     })
 })
    Shery.makeMagnet("#nav-part2 h4", {
-  //Parameters are optional.
+     strength: 5,   // kheencne ki power 
+     distance: 500, // kitni dur tak khicu hi hi
 }); 
 }
 cursoranimation();
